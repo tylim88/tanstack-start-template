@@ -22,7 +22,7 @@ export default tseslint.config({
 			},
 		],
 	},
-	files: ['src/**/*.ts', 'npx/**/*.ts'],
+	files: ['src/**/*.ts'],
 	plugins: {
 		'unused-imports': unusedImports,
 	},
