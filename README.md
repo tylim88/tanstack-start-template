@@ -12,4 +12,6 @@ My take on the ultimate React template—designed with developer experience in m
 - React Query
 - Ky
 - Dayjs
-- Firebase
+- Firebase (mainly for auth)
+- Eslint
+- Prettier
