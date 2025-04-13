@@ -8,6 +8,14 @@
 	"files.readonlyInclude": {
 		"**/routeTree.gen.ts": true
 	},
+	"editor.formatOnSave": true,
+	"cssVariables.lookupFiles": [
+		"**/*.css",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.less",
+		"node_modules/@mantine/core/styles.css"
+	],
 	"explorer.fileNesting.patterns": {
 		"package.json": "package-lock.json",
 		"*.ts": "$(capture).*.ts",

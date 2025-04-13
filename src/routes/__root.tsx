@@ -11,7 +11,13 @@ import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import appCss from '~/styles/app.css?url'
 import { seo } from '~/utils/seo'
-import { createTheme, MantineProvider } from '@mantine/core'
+import {
+	createTheme,
+	MantineProvider,
+	ColorSchemeScript,
+	mantineHtmlProps,
+} from '@mantine/core'
+import 'tailwind-preset-mantine'
 
 const theme = createTheme({
 	/** Put your mantine theme override here */
@@ -77,9 +83,10 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
-		<html>
+		<html {...mantineHtmlProps}>
 			<head>
 				<HeadContent />
+				<ColorSchemeScript />
 			</head>
 			<body>
 				<MantineProvider theme={theme}>
